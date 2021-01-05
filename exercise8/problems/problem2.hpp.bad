@@ -1,0 +1,115 @@
+#ifndef PROBLEM2_HPP
+#define PROBLEM2_HPP
+
+#include <functional>
+#include <fstream>
+#include "FileException.hpp"
+#include <iostream>
+
+
+
+template <typename LineType>
+class TextLineReader
+{
+public:
+    using LineParser = std::function<LineType(const std::string&)>;
+
+public:
+    TextLineReader(const std::string& filePath, LineParser lineParser);
+    ~TextLineReader();
+
+    TextLineReader(const TextLineReader& other) = delete;
+    TextLineReader& operator=(const TextLineReader& other) = delete;
+
+    bool hasNextLine() const;
+    LineType nextLine();
+
+private:
+    // std::string filePath;
+    std::ifstream file;
+    LineParser parser;
+    bool parseFail;
+    // std::string nextText;
+
+    int call;
+};
+
+template <typename LineType>
+TextLineReader<LineType>::TextLineReader(
+    const std::string& filePath, LineParser lineParser
+    )
+    : file{filePath}, parser{lineParser}, parseFail{false}, call{0}
+{
+    // file.open(filePath);
+    // std::cout << "a" << file.is_open() << std::endl;
+
+    // int i = 0;
+
+    // while (!file.eof())
+    // {
+    //     std::cout << i << std::endl;
+    //     std::string line;
+    //     file >> line;
+    //     file.ignore(1);
+    //     std::cout << "LINE: " << line << std::endl;
+    //     hasNextLine();
+    //     char next = file.peek();
+    //     std::cout << "NEXT: " << next << std::endl;
+    //     ++i;
+    // }
+
+
+    // std::getline(file, nextText);
+}
+
+
+template <typename LineType>
+TextLineReader<LineType>::~TextLineReader()
+{
+    file.close();
+}
+
+
+template <typename LineType>
+bool TextLineReader<LineType>::hasNextLine() const
+{
+    // char next = file.get();
+    // std::cout << "NEXT: " << next << std::endl;
+    // std::cout << "EOF: " << file.eof() << std::endl;
+    // file.unget();
+    return !(file.eof() || parseFail);
+}
+
+
+template <typename LineType>
+LineType TextLineReader<LineType>::nextLine()
+{
+    ++call;
+    std::cout << "CALL: " << call << std::endl;
+    if (file.is_open() && hasNextLine())
+    {
+        std::string next;
+        std::getline(file, next);
+        if (next == "")
+        {
+            throw FileException{"no more text"};
+        }
+        LineType value;
+        try
+        {
+            value = parser(next);
+        }
+        catch(const FileException& e)
+        {
+            parseFail = true;
+            throw;
+        }
+        // nextText = next;
+        return value;
+    }
+    throw FileException{"no next line"};
+}
+
+
+#endif
+

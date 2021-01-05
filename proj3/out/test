@@ -1,0 +1,774 @@
+[==========] Running 30 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 29 tests from HashMapTests
+[ RUN      ] HashMapTests.sizeOfNewlyCreatedHashMapIsZero
+table cleared, size now = 0
+[       OK ] HashMapTests.sizeOfNewlyCreatedHashMapIsZero (21 ms)
+[ RUN      ] HashMapTests.emptyMapContainsNoKeys
+table cleared, size now = 0
+[       OK ] HashMapTests.emptyMapContainsNoKeys (5 ms)
+[ RUN      ] HashMapTests.containKeyAfterAddingIt
+number stored: 1
+bucket size: 10
+loadfactor: 0.1
+new number stored: 1
+new bucket size: 10
+new loadfactor: 0.1
+removing linked list at index 8
+table cleared, size now = 0
+[       OK ] HashMapTests.containKeyAfterAddingIt (19 ms)
+[ RUN      ] HashMapTests.initialBucketCountIsCorret
+table cleared, size now = 0
+[       OK ] HashMapTests.initialBucketCountIsCorret (2 ms)
+[ RUN      ] HashMapTests.initialLoadFactorIsZero
+table cleared, size now = 0
+[       OK ] HashMapTests.initialLoadFactorIsZero (3 ms)
+[ RUN      ] HashMapTests.initialMaxBucketSizeIsZero
+table cleared, size now = 0
+[       OK ] HashMapTests.initialMaxBucketSizeIsZero (2 ms)
+[ RUN      ] HashMapTests.canAddKeyValuePair
+number stored: 1
+bucket size: 10
+loadfactor: 0.1
+new number stored: 1
+new bucket size: 10
+new loadfactor: 0.1
+removing linked list at index 8
+table cleared, size now = 0
+[       OK ] HashMapTests.canAddKeyValuePair (2 ms)
+[ RUN      ] HashMapTests.canAddMultipleKeyValuePair
+number stored: 1
+bucket size: 10
+loadfactor: 0.1
+new number stored: 1
+new bucket size: 10
+new loadfactor: 0.1
+number stored: 2
+bucket size: 10
+loadfactor: 0.2
+new number stored: 2
+new bucket size: 10
+new loadfactor: 0.2
+removing linked list at index 4
+removing linked list at index 8
+table cleared, size now = 0
+[       OK ] HashMapTests.canAddMultipleKeyValuePair (2 ms)
+[ RUN      ] HashMapTests.sizeChangeAfteAdding
+number stored: 1
+bucket size: 10
+loadfactor: 0.1
+new number stored: 1
+new bucket size: 10
+new loadfactor: 0.1
+removing linked list at index 8
+table cleared, size now = 0
+[       OK ] HashMapTests.sizeChangeAfteAdding (2 ms)
+[ RUN      ] HashMapTests.canCreateHashMapWithHashFunction
+table cleared, size now = 0
+[       OK ] HashMapTests.canCreateHashMapWithHashFunction (6 ms)
+[ RUN      ] HashMapTests.canAddMultipleKeyValuePairWithSpecialHash
+number stored: 1
+bucket size: 10
+loadfactor: 0.1
+new number stored: 1
+new bucket size: 10
+new loadfactor: 0.1
+number stored: 2
+bucket size: 10
+loadfactor: 0.2
+new number stored: 2
+new bucket size: 10
+new loadfactor: 0.2
+removing linked list at index 0
+removing linked list at index 0
+table cleared, size now = 0
+[       OK ] HashMapTests.canAddMultipleKeyValuePairWithSpecialHash (4 ms)
+[ RUN      ] HashMapTests.canAddMultipleKeyValuePairWithSpecialHash2
+number stored: 1
+bucket size: 10
+loadfactor: 0.1
+new number stored: 1
+new bucket size: 10
+new loadfactor: 0.1
+number stored: 2
+bucket size: 10
+loadfactor: 0.2
+new number stored: 2
+new bucket size: 10
+new loadfactor: 0.2
+number stored: 3
+bucket size: 10
+loadfactor: 0.3
+new number stored: 3
+new bucket size: 10
+new loadfactor: 0.3
+number stored: 4
+bucket size: 10
+loadfactor: 0.4
+new number stored: 4
+new bucket size: 10
+new loadfactor: 0.4
+number stored: 5
+bucket size: 10
+loadfactor: 0.5
+new number stored: 5
+new bucket size: 10
+new loadfactor: 0.5
+number stored: 6
+bucket size: 10
+loadfactor: 0.6
+new number stored: 6
+new bucket size: 10
+new loadfactor: 0.6
+number stored: 7
+bucket size: 10
+loadfactor: 0.7
+new number stored: 7
+new bucket size: 10
+new loadfactor: 0.7
+removing linked list at index 0
+removing linked list at index 0
+removing linked list at index 0
+removing linked list at index 0
+removing linked list at index 0
+removing linked list at index 0
+removing linked list at index 0
+table cleared, size now = 0
+[       OK ] HashMapTests.canAddMultipleKeyValuePairWithSpecialHash2 (10 ms)
+[ RUN      ] HashMapTests.containsMultipleItemsInSameBucket
+number stored: 1
+bucket size: 10
+loadfactor: 0.1
+new number stored: 1
+new bucket size: 10
+new loadfactor: 0.1
+number stored: 2
+bucket size: 10
+loadfactor: 0.2
+new number stored: 2
+new bucket size: 10
+new loadfactor: 0.2
+removing linked list at index 0
+removing linked list at index 0
+table cleared, size now = 0
+[       OK ] HashMapTests.containsMultipleItemsInSameBucket (5 ms)
+[ RUN      ] HashMapTests.containsMultipleItemsInSameBucket2
+number stored: 1
+bucket size: 10
+loadfactor: 0.1
+new number stored: 1
+new bucket size: 10
+new loadfactor: 0.1
+number stored: 2
+bucket size: 10
+loadfactor: 0.2
+new number stored: 2
+new bucket size: 10
+new loadfactor: 0.2
+number stored: 3
+bucket size: 10
+loadfactor: 0.3
+new number stored: 3
+new bucket size: 10
+new loadfactor: 0.3
+number stored: 4
+bucket size: 10
+loadfactor: 0.4
+new number stored: 4
+new bucket size: 10
+new loadfactor: 0.4
+number stored: 5
+bucket size: 10
+loadfactor: 0.5
+new number stored: 5
+new bucket size: 10
+new loadfactor: 0.5
+number stored: 6
+bucket size: 10
+loadfactor: 0.6
+new number stored: 6
+new bucket size: 10
+new loadfactor: 0.6
+number stored: 7
+bucket size: 10
+loadfactor: 0.7
+new number stored: 7
+new bucket size: 10
+new loadfactor: 0.7
+removing linked list at index 0
+removing linked list at index 0
+removing linked list at index 0
+removing linked list at index 0
+removing linked list at index 0
+removing linked list at index 0
+removing linked list at index 0
+table cleared, size now = 0
+[       OK ] HashMapTests.containsMultipleItemsInSameBucket2 (12 ms)
+[ RUN      ] HashMapTests.testMaxBucketSize
+number stored: 1
+bucket size: 10
+loadfactor: 0.1
+new number stored: 1
+new bucket size: 10
+new loadfactor: 0.1
+number stored: 2
+bucket size: 10
+loadfactor: 0.2
+new number stored: 2
+new bucket size: 10
+new loadfactor: 0.2
+found a non-null cell at index 0
+removing linked list at index 0
+removing linked list at index 0
+table cleared, size now = 0
+[       OK ] HashMapTests.testMaxBucketSize (4 ms)
+[ RUN      ] HashMapTests.testMaxBucketSize2
+number stored: 1
+bucket size: 10
+loadfactor: 0.1
+new number stored: 1
+new bucket size: 10
+new loadfactor: 0.1
+number stored: 2
+bucket size: 10
+loadfactor: 0.2
+new number stored: 2
+new bucket size: 10
+new loadfactor: 0.2
+number stored: 3
+bucket size: 10
+loadfactor: 0.3
+new number stored: 3
+new bucket size: 10
+new loadfactor: 0.3
+number stored: 4
+bucket size: 10
+loadfactor: 0.4
+new number stored: 4
+new bucket size: 10
+new loadfactor: 0.4
+number stored: 5
+bucket size: 10
+loadfactor: 0.5
+new number stored: 5
+new bucket size: 10
+new loadfactor: 0.5
+number stored: 6
+bucket size: 10
+loadfactor: 0.6
+new number stored: 6
+new bucket size: 10
+new loadfactor: 0.6
+number stored: 7
+bucket size: 10
+loadfactor: 0.7
+new number stored: 7
+new bucket size: 10
+new loadfactor: 0.7
+found a non-null cell at index 0
+removing linked list at index 0
+removing linked list at index 0
+removing linked list at index 0
+removing linked list at index 0
+removing linked list at index 0
+removing linked list at index 0
+removing linked list at index 0
+table cleared, size now = 0
+[       OK ] HashMapTests.testMaxBucketSize2 (6 ms)
+[ RUN      ] HashMapTests.testMaxBucketSizeWithMultipleLinkedLists
+number stored: 1
+bucket size: 10
+loadfactor: 0.1
+new number stored: 1
+new bucket size: 10
+new loadfactor: 0.1
+number stored: 2
+bucket size: 10
+loadfactor: 0.2
+new number stored: 2
+new bucket size: 10
+new loadfactor: 0.2
+number stored: 3
+bucket size: 10
+loadfactor: 0.3
+new number stored: 3
+new bucket size: 10
+new loadfactor: 0.3
+number stored: 4
+bucket size: 10
+loadfactor: 0.4
+new number stored: 4
+new bucket size: 10
+new loadfactor: 0.4
+number stored: 5
+bucket size: 10
+loadfactor: 0.5
+new number stored: 5
+new bucket size: 10
+new loadfactor: 0.5
+number stored: 6
+bucket size: 10
+loadfactor: 0.6
+new number stored: 6
+new bucket size: 10
+new loadfactor: 0.6
+number stored: 7
+bucket size: 10
+loadfactor: 0.7
+new number stored: 7
+new bucket size: 10
+new loadfactor: 0.7
+number stored: 8
+bucket size: 10
+loadfactor: 0.8
+new number stored: 8
+new bucket size: 10
+new loadfactor: 0.8
+number stored: 9
+bucket size: 10
+loadfactor: 0.9
+addingHello1ICS45C
+number stored: 1
+bucket size: 21
+loadfactor: 0.047619
+new number stored: 1
+new bucket size: 21
+new loadfactor: 0.047619
+addingHello2ICS45C
+number stored: 2
+bucket size: 21
+loadfactor: 0.0952381
+new number stored: 2
+new bucket size: 21
+new loadfactor: 0.0952381
+addingHello3ICS45C
+number stored: 3
+bucket size: 21
+loadfactor: 0.142857
+new number stored: 3
+new bucket size: 21
+new loadfactor: 0.142857
+addingBooperfect
+number stored: 4
+bucket size: 21
+loadfactor: 0.190476
+new number stored: 4
+new bucket size: 21
+new loadfactor: 0.190476
+addingarandomstringabcdefghijklmn
+number stored: 5
+bucket size: 21
+loadfactor: 0.238095
+new number stored: 5
+new bucket size: 21
+new loadfactor: 0.238095
+addingarandomstring2abcdefghijklmn
+number stored: 6
+bucket size: 21
+loadfactor: 0.285714
+new number stored: 6
+new bucket size: 21
+new loadfactor: 0.285714
+addingarandomstring3abcdefghijklmn
+number stored: 7
+bucket size: 21
+loadfactor: 0.333333
+new number stored: 7
+new bucket size: 21
+new loadfactor: 0.333333
+addingarandomstring4abcdefghijklmn
+number stored: 8
+bucket size: 21
+loadfactor: 0.380952
+new number stored: 8
+new bucket size: 21
+new loadfactor: 0.380952
+addingarandomstring5abcdefghijklmn
+number stored: 9
+bucket size: 21
+loadfactor: 0.428571
+new number stored: 9
+new bucket size: 21
+new loadfactor: 0.428571
+new number stored: 9
+new bucket size: 21
+new loadfactor: 0.428571
+number stored: 10
+bucket size: 21
+loadfactor: 0.47619
+new number stored: 10
+new bucket size: 21
+new loadfactor: 0.47619
+number stored: 11
+bucket size: 21
+loadfactor: 0.52381
+new number stored: 11
+new bucket size: 21
+new loadfactor: 0.52381
+found a non-null cell at index 3
+found a non-null cell at index 9
+found a non-null cell at index 13
+found a non-null cell at index 14
+removing linked list at index 3
+removing linked list at index 9
+removing linked list at index 9
+removing linked list at index 9
+removing linked list at index 13
+removing linked list at index 13
+removing linked list at index 13
+removing linked list at index 13
+removing linked list at index 13
+removing linked list at index 14
+removing linked list at index 14
+table cleared, size now = 0
+[       OK ] HashMapTests.testMaxBucketSizeWithMultipleLinkedLists (16 ms)
+[ RUN      ] HashMapTests.returnCorrectValue
+number stored: 1
+bucket size: 10
+loadfactor: 0.1
+new number stored: 1
+new bucket size: 10
+new loadfactor: 0.1
+removing linked list at index 8
+table cleared, size now = 0
+[       OK ] HashMapTests.returnCorrectValue (4 ms)
+[ RUN      ] HashMapTests.returnCorrectValueMultiple
+number stored: 1
+bucket size: 10
+loadfactor: 0.1
+new number stored: 1
+new bucket size: 10
+new loadfactor: 0.1
+number stored: 2
+bucket size: 10
+loadfactor: 0.2
+new number stored: 2
+new bucket size: 10
+new loadfactor: 0.2
+removing linked list at index 4
+removing linked list at index 8
+table cleared, size now = 0
+[       OK ] HashMapTests.returnCorrectValueMultiple (4 ms)
+[ RUN      ] HashMapTests.returnEmptyStringIfKeyNotPresent
+number stored: 1
+bucket size: 10
+loadfactor: 0.1
+new number stored: 1
+new bucket size: 10
+new loadfactor: 0.1
+removing linked list at index 8
+table cleared, size now = 0
+[       OK ] HashMapTests.returnEmptyStringIfKeyNotPresent (4 ms)
+[ RUN      ] HashMapTests.canRemovePairFromBucket
+number stored: 1
+bucket size: 10
+loadfactor: 0.1
+new number stored: 1
+new bucket size: 10
+new loadfactor: 0.1
+found a non-null cell at index 8
+removing something from the first node
+table cleared, size now = 0
+[       OK ] HashMapTests.canRemovePairFromBucket (7 ms)
+[ RUN      ] HashMapTests.canRemovePairFromBucketMultiple
+number stored: 1
+bucket size: 10
+loadfactor: 0.1
+new number stored: 1
+new bucket size: 10
+new loadfactor: 0.1
+number stored: 2
+bucket size: 10
+loadfactor: 0.2
+new number stored: 2
+new bucket size: 10
+new loadfactor: 0.2
+removing something from the first node
+removing something from the first node
+table cleared, size now = 0
+[       OK ] HashMapTests.canRemovePairFromBucketMultiple (9 ms)
+[ RUN      ] HashMapTests.canRemovePairFromBucketWithSpecialHash
+number stored: 1
+bucket size: 10
+loadfactor: 0.1
+new number stored: 1
+new bucket size: 10
+new loadfactor: 0.1
+number stored: 2
+bucket size: 10
+loadfactor: 0.2
+new number stored: 2
+new bucket size: 10
+new loadfactor: 0.2
+found a non-null cell at index 0
+removing something from the first node
+removing something from the first node
+table cleared, size now = 0
+[       OK ] HashMapTests.canRemovePairFromBucketWithSpecialHash (10 ms)
+[ RUN      ] HashMapTests.canRemovePairFromBucketWithSpecialHash2
+number stored: 1
+bucket size: 10
+loadfactor: 0.1
+new number stored: 1
+new bucket size: 10
+new loadfactor: 0.1
+number stored: 2
+bucket size: 10
+loadfactor: 0.2
+new number stored: 2
+new bucket size: 10
+new loadfactor: 0.2
+found a non-null cell at index 0
+removing something inside linkedlist
+removing something from the first node
+table cleared, size now = 0
+[       OK ] HashMapTests.canRemovePairFromBucketWithSpecialHash2 (11 ms)
+[ RUN      ] HashMapTests.canClearTable
+number stored: 1
+bucket size: 10
+loadfactor: 0.1
+new number stored: 1
+new bucket size: 10
+new loadfactor: 0.1
+number stored: 2
+bucket size: 10
+loadfactor: 0.2
+new number stored: 2
+new bucket size: 10
+new loadfactor: 0.2
+removing linked list at index 4
+removing linked list at index 8
+table cleared, size now = 0
+table cleared, size now = 0
+[       OK ] HashMapTests.canClearTable (7 ms)
+[ RUN      ] HashMapTests.canClearTableZeroHash
+number stored: 1
+bucket size: 10
+loadfactor: 0.1
+new number stored: 1
+new bucket size: 10
+new loadfactor: 0.1
+number stored: 2
+bucket size: 10
+loadfactor: 0.2
+new number stored: 2
+new bucket size: 10
+new loadfactor: 0.2
+number stored: 3
+bucket size: 10
+loadfactor: 0.3
+new number stored: 3
+new bucket size: 10
+new loadfactor: 0.3
+number stored: 4
+bucket size: 10
+loadfactor: 0.4
+new number stored: 4
+new bucket size: 10
+new loadfactor: 0.4
+number stored: 5
+bucket size: 10
+loadfactor: 0.5
+new number stored: 5
+new bucket size: 10
+new loadfactor: 0.5
+removing linked list at index 0
+removing linked list at index 0
+removing linked list at index 0
+removing linked list at index 0
+removing linked list at index 0
+table cleared, size now = 0
+table cleared, size now = 0
+[       OK ] HashMapTests.canClearTableZeroHash (13 ms)
+[ RUN      ] HashMapTests.canClearTableSpecialHash
+number stored: 1
+bucket size: 10
+loadfactor: 0.1
+new number stored: 1
+new bucket size: 10
+new loadfactor: 0.1
+number stored: 2
+bucket size: 10
+loadfactor: 0.2
+new number stored: 2
+new bucket size: 10
+new loadfactor: 0.2
+number stored: 3
+bucket size: 10
+loadfactor: 0.3
+new number stored: 3
+new bucket size: 10
+new loadfactor: 0.3
+number stored: 4
+bucket size: 10
+loadfactor: 0.4
+new number stored: 4
+new bucket size: 10
+new loadfactor: 0.4
+number stored: 5
+bucket size: 10
+loadfactor: 0.5
+new number stored: 5
+new bucket size: 10
+new loadfactor: 0.5
+found a non-null cell at index 2
+found a non-null cell at index 6
+found a non-null cell at index 7
+removing linked list at index 2
+removing linked list at index 2
+removing linked list at index 2
+removing linked list at index 6
+removing linked list at index 7
+table cleared, size now = 0
+table cleared, size now = 0
+[       OK ] HashMapTests.canClearTableSpecialHash (13 ms)
+[ RUN      ] HashMapTests.canRehash
+number stored: 1
+bucket size: 10
+loadfactor: 0.1
+new number stored: 1
+new bucket size: 10
+new loadfactor: 0.1
+number stored: 2
+bucket size: 10
+loadfactor: 0.2
+new number stored: 2
+new bucket size: 10
+new loadfactor: 0.2
+number stored: 3
+bucket size: 10
+loadfactor: 0.3
+new number stored: 3
+new bucket size: 10
+new loadfactor: 0.3
+number stored: 4
+bucket size: 10
+loadfactor: 0.4
+new number stored: 4
+new bucket size: 10
+new loadfactor: 0.4
+number stored: 5
+bucket size: 10
+loadfactor: 0.5
+new number stored: 5
+new bucket size: 10
+new loadfactor: 0.5
+number stored: 6
+bucket size: 10
+loadfactor: 0.6
+new number stored: 6
+new bucket size: 10
+new loadfactor: 0.6
+number stored: 7
+bucket size: 10
+loadfactor: 0.7
+new number stored: 7
+new bucket size: 10
+new loadfactor: 0.7
+number stored: 8
+bucket size: 10
+loadfactor: 0.8
+new number stored: 8
+new bucket size: 10
+new loadfactor: 0.8
+number stored: 9
+bucket size: 10
+loadfactor: 0.9
+addingHellocsomeValue
+number stored: 1
+bucket size: 21
+loadfactor: 0.047619
+new number stored: 1
+new bucket size: 21
+new loadfactor: 0.047619
+addingHellofsomeValue
+number stored: 2
+bucket size: 21
+loadfactor: 0.0952381
+new number stored: 2
+new bucket size: 21
+new loadfactor: 0.0952381
+addingHelloasomeValue
+number stored: 3
+bucket size: 21
+loadfactor: 0.142857
+new number stored: 3
+new bucket size: 21
+new loadfactor: 0.142857
+addingHellodsomeValue
+number stored: 4
+bucket size: 21
+loadfactor: 0.190476
+new number stored: 4
+new bucket size: 21
+new loadfactor: 0.190476
+addingHellogsomeValue
+number stored: 5
+bucket size: 21
+loadfactor: 0.238095
+new number stored: 5
+new bucket size: 21
+new loadfactor: 0.238095
+addingHellobsomeValue
+number stored: 6
+bucket size: 21
+loadfactor: 0.285714
+new number stored: 6
+new bucket size: 21
+new loadfactor: 0.285714
+addingHelloesomeValue
+number stored: 7
+bucket size: 21
+loadfactor: 0.333333
+new number stored: 7
+new bucket size: 21
+new loadfactor: 0.333333
+addingHellohsomeValue
+number stored: 8
+bucket size: 21
+loadfactor: 0.380952
+new number stored: 8
+new bucket size: 21
+new loadfactor: 0.380952
+addingvalueThatCauseRehashsomeValue
+number stored: 9
+bucket size: 21
+loadfactor: 0.428571
+new number stored: 9
+new bucket size: 21
+new loadfactor: 0.428571
+new number stored: 9
+new bucket size: 21
+new loadfactor: 0.428571
+removing linked list at index 7
+removing linked list at index 8
+removing linked list at index 9
+removing linked list at index 10
+removing linked list at index 11
+removing linked list at index 13
+removing linked list at index 15
+removing linked list at index 16
+removing linked list at index 18
+table cleared, size now = 0
+[       OK ] HashMapTests.canRehash (13 ms)
+[ RUN      ] HashMapTests.notAddIfKeyAlreadyExist
+number stored: 1
+bucket size: 10
+loadfactor: 0.1
+new number stored: 1
+new bucket size: 10
+new loadfactor: 0.1
+removing linked list at index 8
+table cleared, size now = 0
+[       OK ] HashMapTests.notAddIfKeyAlreadyExist (4 ms)
+[----------] 29 tests from HashMapTests (230 ms total)
+
+[----------] 1 test from HashMap_SanityChecks
+[ RUN      ] HashMap_SanityChecks.canRemove
+table cleared, size now = 0
+[       OK ] HashMap_SanityChecks.canRemove (1 ms)
+[----------] 1 test from HashMap_SanityChecks (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 30 tests from 2 test suites ran. (276 ms total)
+[  PASSED  ] 30 tests.

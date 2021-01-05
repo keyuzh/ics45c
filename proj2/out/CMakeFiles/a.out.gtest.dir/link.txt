@@ -1,0 +1,1 @@
+/usr/bin/clang++     CMakeFiles/a.out.gtest.dir/gtest/gtestmain.cpp.o CMakeFiles/a.out.gtest.dir/app/cleanup.cpp.o CMakeFiles/a.out.gtest.dir/app/finalgrade.cpp.o CMakeFiles/a.out.gtest.dir/app/input.cpp.o CMakeFiles/a.out.gtest.dir/app/scores.cpp.o  -o bin/a.out.gtest  -lpthread -lc++ -lgtest -lgtest_main 

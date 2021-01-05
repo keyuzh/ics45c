@@ -1,0 +1,2 @@
+/usr/bin/ar qc lib/libics45cprojectproblems.a  CMakeFiles/ics45cprojectproblems.dir/problems/BaseClass.cpp.o CMakeFiles/ics45cprojectproblems.dir/problems/InheritClass.cpp.o CMakeFiles/ics45cprojectproblems.dir/problems/problem2.cpp.o
+/usr/bin/ranlib lib/libics45cprojectproblems.a

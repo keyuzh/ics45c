@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ics45c/projects/staticMembers/app/Widget.hpp
+
+/home/ics45c/projects/staticMembers/app/main.cpp
+iostream
+-
+Widget.hpp
+/home/ics45c/projects/staticMembers/app/Widget.hpp
+

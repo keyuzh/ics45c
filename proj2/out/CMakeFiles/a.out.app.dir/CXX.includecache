@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ics45c/projects/proj2/app/scores.cpp
+scores.hpp
+/home/ics45c/projects/proj2/app/scores.hpp
+structs.hpp
+/home/ics45c/projects/proj2/app/structs.hpp
+
+/home/ics45c/projects/proj2/app/scores.hpp
+structs.hpp
+/home/ics45c/projects/proj2/app/structs.hpp
+
+/home/ics45c/projects/proj2/app/structs.hpp
+string
+-
+

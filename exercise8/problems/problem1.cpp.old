@@ -1,0 +1,49 @@
+void downloadFile(const std::string& host, unsigned int port, const std::string& filename)
+{
+    Lock* lock = nullptr;
+    Connection* connection = nullptr;
+    File* file = nullptr;
+
+    try
+    {
+        lock = acquireLock();
+        connection = connection(host, port);
+        file = openFile(filename);
+
+        while (connection->hasMoreData())
+        {
+            file->writeLine(connection->readLine());
+        }
+
+        file->close();
+        delete file;
+
+        connection->close();
+        delete connection;
+
+        lock->release();
+        delete lock;
+    }
+    catch (...)
+    {
+        if (file != nullptr)
+        {
+            file->close();
+            delete file;
+        }
+
+        if (connection != nullptr)
+        {
+            connection->close();
+            delete connection;
+        }
+
+        if (lock != nullptr)
+        {
+            lock->release();
+            delete lock;
+        }
+
+        throw;
+    }
+}

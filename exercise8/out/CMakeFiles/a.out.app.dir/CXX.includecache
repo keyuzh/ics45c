@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../problems/FileException.hpp
+stdexcept
+-
+
+../problems/problem2.hpp
+functional
+-
+fstream
+-
+FileException.hpp
+../problems/FileException.hpp
+iostream
+-
+
+/home/ics45c/projects/exercise8/app/main.cpp
+charconv
+-
+iostream
+-
+string
+-
+FileException.hpp
+/home/ics45c/projects/exercise8/app/FileException.hpp
+problem2.hpp
+/home/ics45c/projects/exercise8/app/problem2.hpp
+

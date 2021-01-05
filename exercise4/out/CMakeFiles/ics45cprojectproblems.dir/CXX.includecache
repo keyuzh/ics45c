@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ics45c/projects/exercise4/problems/GroceryItem.hpp
+string
+-
+
+/home/ics45c/projects/exercise4/problems/GroceryPurchase.hpp
+GroceryItem.hpp
+/home/ics45c/projects/exercise4/problems/GroceryItem.hpp
+
+/home/ics45c/projects/exercise4/problems/problem4.cpp
+gtest/gtest.h
+-
+GroceryItem.hpp
+/home/ics45c/projects/exercise4/problems/GroceryItem.hpp
+GroceryPurchase.hpp
+/home/ics45c/projects/exercise4/problems/GroceryPurchase.hpp
+

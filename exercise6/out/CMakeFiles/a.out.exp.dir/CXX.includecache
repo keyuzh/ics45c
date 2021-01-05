@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../problems/BaseClass.hpp
+
+../problems/InheritClass.hpp
+BaseClass.hpp
+../problems/BaseClass.hpp
+
+/home/ics45c/projects/exercise6/exp/expmain.cpp
+iostream
+-
+BaseClass.hpp
+/home/ics45c/projects/exercise6/exp/BaseClass.hpp
+InheritClass.hpp
+/home/ics45c/projects/exercise6/exp/InheritClass.hpp
+

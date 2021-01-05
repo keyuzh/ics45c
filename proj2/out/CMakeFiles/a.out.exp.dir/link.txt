@@ -1,0 +1,1 @@
+/usr/bin/clang++     CMakeFiles/a.out.exp.dir/exp/expmain.cpp.o CMakeFiles/a.out.exp.dir/app/cleanup.cpp.o CMakeFiles/a.out.exp.dir/app/finalgrade.cpp.o CMakeFiles/a.out.exp.dir/app/input.cpp.o CMakeFiles/a.out.exp.dir/app/scores.cpp.o  -o bin/a.out.exp  -lpthread -lc++ 

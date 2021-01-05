@@ -1,0 +1,1 @@
+/usr/bin/clang++     CMakeFiles/a.out.app.dir/app/example5.cpp.o CMakeFiles/a.out.app.dir/app/main.cpp.o CMakeFiles/a.out.app.dir/app/problem1.cpp.o  -o bin/a.out.app  -lpthread -lc++ lib/libics45cprojectproblems.a -lpthread -lc++ 

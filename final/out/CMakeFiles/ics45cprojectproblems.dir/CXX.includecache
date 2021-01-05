@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ics45c/projects/final/problems/problem3.cpp
+problem3.hpp
+/home/ics45c/projects/final/problems/problem3.hpp
+algorithm
+-
+
+/home/ics45c/projects/final/problems/problem3.hpp
+functional
+-
+iostream
+-
+vector
+-
+

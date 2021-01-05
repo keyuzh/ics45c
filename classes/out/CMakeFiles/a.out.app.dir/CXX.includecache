@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ics45c/projects/classes/app/Person.cpp
+Person.hpp
+/home/ics45c/projects/classes/app/Person.hpp
+iostream
+-
+string
+-
+
+/home/ics45c/projects/classes/app/Person.hpp
+string
+-
+Song.hpp
+/home/ics45c/projects/classes/app/Song.hpp
+
+/home/ics45c/projects/classes/app/Song.hpp
+string
+-
+
+/home/ics45c/projects/classes/app/main.cpp
+iostream
+-
+Song.hpp
+/home/ics45c/projects/classes/app/Song.hpp
+Person.hpp
+/home/ics45c/projects/classes/app/Person.hpp
+

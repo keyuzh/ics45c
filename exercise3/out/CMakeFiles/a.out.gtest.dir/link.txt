@@ -1,0 +1,1 @@
+/usr/bin/clang++     CMakeFiles/a.out.gtest.dir/gtest/gtestmain.cpp.o CMakeFiles/a.out.gtest.dir/app/example5.cpp.o CMakeFiles/a.out.gtest.dir/app/problem1.cpp.o  -o bin/a.out.gtest  -lpthread -lc++ -lgtest -lgtest_main lib/libics45cprojectproblems.a -lpthread -lc++ 

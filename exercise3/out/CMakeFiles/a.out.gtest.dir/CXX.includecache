@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ics45c/projects/exercise3/app/example5.cpp
+example5.hpp
+/home/ics45c/projects/exercise3/app/example5.hpp
+
+/home/ics45c/projects/exercise3/app/example5.hpp
+
+/home/ics45c/projects/exercise3/gtest/gtestmain.cpp
+gtest/gtest.h
+-
+

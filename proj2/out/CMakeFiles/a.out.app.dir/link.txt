@@ -1,0 +1,1 @@
+/usr/bin/clang++     CMakeFiles/a.out.app.dir/app/cleanup.cpp.o CMakeFiles/a.out.app.dir/app/finalgrade.cpp.o CMakeFiles/a.out.app.dir/app/input.cpp.o CMakeFiles/a.out.app.dir/app/main.cpp.o CMakeFiles/a.out.app.dir/app/scores.cpp.o  -o bin/a.out.app  -lpthread -lc++ 
